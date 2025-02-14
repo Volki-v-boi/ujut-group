@@ -1,0 +1,26 @@
+
+.stage-section {
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+
+.stage {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.stage:first-child {
+  position: absolute; /* Выводим первый контейнер за пределы */
+  left: 0; /* Можно настроить по своему */
+  top: 0;  /* Можно настроить по своему */
+}
+
+.order-input:last-of-type {
+  width: 100%;
+}
+
+.order-backdrop {
+  position: absolute;
+}

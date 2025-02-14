@@ -1,0 +1,93 @@
+/* color palete
+#eaeaea,#573fd7,#11358b,#e48f24 */
+
+.portfolio {
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 16px;
+}
+.ptf-title {
+  margin-bottom: 24px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.dashed-line {
+  width: 80%;
+  border: none;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+  /* margin: 8px 0; */
+}
+
+.ptf-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ptf-card {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.ptf-card-img {
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.ptf-card-description {
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.ptf-btn {
+  margin-top: 16px;
+}
+
+/* ______________________________Tablet_____________________________ */
+@media screen and (min-width: 768px) {
+  .ptf-card {
+    width: calc(50% - 10px); /* Учитываем gap */
+  }
+}
+
+/* ______________________________Desktop_____________________________ */
+@media screen and (min-width: 1280px) {
+  .ptf-list {
+    justify-content: space-evenly;
+    /* flex-wrap: nowrap; */
+  }
+
+  .ptf-card {
+    width: calc(25% - 15px);
+    opacity: 0; /* Сначала скрываем */
+    animation: slideTrain 800ms ease-out forwards;
+  }
+  @keyframes slideTrain {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Добавляем задержку для плавного эффекта "поезда" */
+  .ptf-card:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .ptf-card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .ptf-card:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .ptf-card:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+}

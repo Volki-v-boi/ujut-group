@@ -1,0 +1,189 @@
+/* color palete
+#eaeaea,#573fd7,#11358b,#e48f24 */
+
+.order-backdrop {
+  /* width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.377); */
+}
+
+.cork {
+  min-width: 340px;
+}
+
+.order-modal {
+  min-width: 280px;
+  height: auto;
+  background-color: black;
+  padding: 30px;
+  margin-bottom: 24px;
+}
+
+.order-title {
+  color: #eaeaea;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.order-input {
+  box-sizing: border-box;
+  padding-left: 16px;
+  height: 51px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  color: #eaeaea;
+}
+
+.order-input:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+.order-input::placeholder {
+  color: #eaeaea;
+}
+
+.order-send-btn {
+  padding: 20px 25px;
+  background-color: rgba(211, 204, 204, 0.534);
+  color: #eaeaea;
+  margin-top: 40px;
+  border: none;
+  border-radius: 50px/100%;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.order-send-btn:hover,
+.order-send-btn:focus {
+  background-color: rgba(211, 204, 204, 0.365);
+}
+
+.stage-section {
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+  padding: 50px 20px;
+  border-radius: 16px; /* Скругление углов */
+  backdrop-filter: blur(10px); /* Эффект размытия фона */
+}
+
+.stage-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #e48f24;
+  margin-bottom: 24px;
+}
+
+.stage-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stage-item {
+  font-size: 18px;
+  color: #fff; /* Белый текст */
+  background: rgba(17, 53, 139, 0.2); /* Полупрозрачный синий фон */
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.stage-item:hover {
+  background: rgba(17, 53, 139, 0.4); /* Затемнение при наведении */
+  transform: scale(1.02);
+}
+
+.list-count {
+  font-weight: bold;
+  font-size: 22px;
+  color: #e48f24; /* Оранжевый акцент */
+}
+
+.stage-img {
+  display: none;
+}
+
+/* ===============================TABLET_768============================= */
+@media screen and (min-width: 768px) {
+  .stage {
+    display: flex;
+    gap: 20px;
+  }
+
+  .stage-img {
+    display: block;
+    width: 45%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .order-input:last-of-type {
+    width: 50%;
+  }
+}
+/* ===============================DESKTOP_1280============================= */
+@media screen and (min-width: 1280px) {
+  .stage-section {
+    display: flex;
+    gap: 12px;
+    position: relative;
+  }
+
+  .stage {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .stage:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .stage-img {
+    height: 100%;
+  }
+
+  .order-modal {
+    margin-bottom: 0;
+    position: absolute;
+    top: -40px;
+  }
+
+  .order-input:last-of-type {
+    width: 100%;
+  }
+
+  /* .order-backdrop {
+    position: absolute;
+  } */
+}

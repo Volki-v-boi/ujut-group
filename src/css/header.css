@@ -1,5 +1,7 @@
-/* ================================MOBILE================================= */
+/* color palete
+#eaeaea,#573fd7,#11358b,#e48f24 */
 
+/* ================================MOBILE================================= */
 .header-container {
   width: 100%;
   position: absolute;
@@ -12,9 +14,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fbfbfb;
+  background-color: #eaeaea;
   border-radius: 8px;
   padding: 7px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-logo {
@@ -22,7 +25,7 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.03em;
-  color: #1b414b;
+  color: #11358b;
 }
 
 .menu-list {
@@ -37,73 +40,22 @@
   line-height: 1.3;
   text-transform: uppercase;
   text-align: center;
-  color: #fbfbfb;
+  color: #eaeaea;
   width: 75px;
   height: 20px;
   border-radius: 6px;
-  background-color: #0737637a;
+  background-color: #573fd7;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: background-color 400ms cubic-bezier(0.7, 1, 0.15, 0.9);
 }
 
-.menu-item :hover {
-  background-color: #073763;
-}
-/* Выпадающее меню */
-/* .language-switcher {
-  position: relative;
+.menu-link:active,
+.menu-link:hover {
+  background-color: #11358b;
 }
 
-.language-btn {
-  background: #0737637a;
-  border: none;
-  color: #fbfbfb;
-  padding: 8px 15px;
-  font-size: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.language-btn:hover {
-  background-color: #073763;
-}
-
-.language-dropdown {
-  position: absolute;
-  top: 28px;
-  right: 0;
-  background-color: #073763;
-  border: 1px solid #f0c244;
-  display: none;
-  flex-direction: column;
-  width: 120px;
-  text-align: center;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.language-dropdown a {
-  padding: 10px;
-  text-decoration: none;
-  color: #fbfbfb;
-  font-size: 16px;
-  display: block;
-  transition: background 0.3s;
-}
-
-.language-dropdown a:hover {
-  background-color: #e9edf07a;
-  color: #fbfbfb;
-}
-
-.language-switcher:hover .language-dropdown {
-  display: flex;
-} */
-/* Социальные сети */
 .social-list {
   display: none;
   gap: 8px;
@@ -133,20 +85,23 @@
 
 .mob-menu-container {
   width: 100%;
-  min-height: 100%;
-  padding: 16px 20px 40px 20px;
+  min-height: 95vh;
+  padding: 16px 20px 20px 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 10;
-  background: #0e1823;
+  z-index: 1000;
+  background-color: #11358b;
   opacity: 0;
   visibility: hidden;
+  overflow: hidden;
   pointer-events: none;
   transition: opacity 400ms cubic-bezier(0.7, 1, 0.15, 0.9),
     visibility 400ms cubic-bezier(0.7, 1, 0.15, 0.9),
     pointer-events 400ms cubic-bezier(0.7, 1, 0.15, 0.9);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .mob-menu-container.is-open {
@@ -164,10 +119,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fbfbfb;
+  background-color: #eaeaea;
   border-radius: 8px;
   padding: 7px 20px;
-  margin-bottom: 201px;
+}
+
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
 .close-menu-btn {
@@ -183,14 +144,6 @@
   fill: #055545;
 }
 
-.mob-menu-list {
-  margin-bottom: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
 .mob-menu-link {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -198,11 +151,11 @@
   line-height: 1.3;
   text-transform: uppercase;
   text-align: center;
-  color: #fbfbfb;
+  color: #eaeaea;
   width: 91px;
   height: 40px;
   border-radius: 8px;
-  background-color: rgba(27, 65, 75, 0.5);
+  background-color: #573fd7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,7 +163,7 @@
 }
 
 .mob-menu-link:active {
-  background-color: #1b414b;
+  background-color: #11358b;
 }
 
 .menu-social-list {
@@ -226,7 +179,7 @@
 }
 
 .menu-social-icons {
-  fill: #fbfbfb;
+  fill: #e48f24;
   transition: fill 400ms cubic-bezier(0.7, 1, 0.15, 0.9);
 }
 
@@ -251,11 +204,7 @@
   }
 
   .header-logo {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
     font-size: 20px;
-    letter-spacing: -0.03em;
-    color: #1b414b;
   }
 
   .menu-list {
@@ -263,7 +212,7 @@
   }
 
   .menu-link:active {
-    background-color: #1b414b;
+    background-color: #11358b;
   }
 
   .social-list {
@@ -272,7 +221,7 @@
   }
 
   .social-icons {
-    fill: #1b414b;
+    fill: #e48f24;
     transition: fill 400ms cubic-bezier(0.7, 1, 0.15, 0.9);
   }
 
@@ -297,10 +246,13 @@
 
   .menu-link:hover,
   .menu-link:focus {
-    background-color: #1b414b;
+    background-color: #11358b;
   }
+
   .social-icons:hover,
   .social-icons:focus {
     fill: #062730;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
   }
 }

@@ -1,0 +1,118 @@
+/* color palete
+#eaeaea,#573fd7,#11358b,#e48f24 */
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.377);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  padding: 30px;
+  width: 385px;
+  min-height: 447.5px;
+  background-color: #eaeaea;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close-btn {
+  padding: 0;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #222121;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfbfb;
+}
+
+.modal-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 190px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.modal-title span {
+  color: #e48f24;
+}
+
+.modal-label {
+  display: block;
+  margin-left: 8px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.modal-input {
+  box-sizing: border-box;
+  padding-left: 16px;
+  height: 56px;
+  width: 100%;
+  border: 1.5px solid #e48f24;
+  background-color: transparent;
+  border-radius: 12px;
+  box-shadow: 0px 5.445px 5.445px 0px #e48f24;
+  margin-bottom: 16px;
+  font-size: 24px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-input:focus {
+  border: 1.5px solid #11358b;
+  box-shadow: 0px 5.445px 5.445px 0px #11358b;
+  outline: none;
+}
+
+.modal-input::placeholder {
+  color: #a59d9d;
+  font-size: 16px;
+  /* font-size: 14px; */
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+textarea {
+  margin-top: 32px;
+  resize: none;
+}
+
+.modal-send-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #11358b;
+  color: #eaeaea;
+  border: none;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.icon-close-btn {
+  fill: #11358b;
+}

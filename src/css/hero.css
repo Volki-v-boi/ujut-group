@@ -1,0 +1,189 @@
+/* color palete
+#eaeaea,#573fd7,#11358b,#e48f24 */
+
+.hero-section {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../img/hero-bg/construction_hand_pointing_phone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 260px 0 302px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/hero-bg/construction_hand_pointing_phone_2x.jpg);
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #eaeaea;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  color: #eaeaea;
+  /* color: rgba(251, 251, 251, 0.7); */
+  margin-bottom: 38px;
+}
+
+.hero-btn {
+  background: #573fd7;
+  border-radius: 15px;
+  padding: 14px 32px;
+  min-width: 141px;
+  height: 46px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #eaeaea;
+  display: block;
+  border: none;
+  margin: 0 auto;
+  transition: background-color 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    color 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.hero-btn:active {
+  background: #e48f24;
+  color: #1b414b;
+}
+
+/**---------TABLET--------**/
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/hero-bg/construction_hand_pointing_tablet.jpg);
+    padding: 280px 0 282px;
+    /* height: 962px; */
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/hero-bg/construction_hand_pointing_tablet_2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 70px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 597px;
+    margin-bottom: 48px;
+  }
+
+  .hero-btn {
+    padding: 16px 40px;
+    min-width: 179px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+/**------------------------**/
+/**---------DESKTOP(1280px)--------**/
+
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/hero-bg/construction_hand_pointing.jpg);
+    padding: 235px 0 215px;
+    /* height: 800px; */
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/hero-bg/construction_hand_pointing_2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 80px;
+    max-width: 1001px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .hero-btn:hover {
+    background: #e48f24;
+    color: #1b414b;
+  }
+}
+
+/**------------------------**/
+/**---------DESKTOP(1440px)--------**/
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/hero-bg/construction_hand_pointing.jpg);
+    padding-bottom: 210px;
+    /* height: 795px; */
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/hero-bg/construction_hand_pointing_2x.jpg);
+    }
+  }
+}
